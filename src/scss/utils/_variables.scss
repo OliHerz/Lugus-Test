@@ -9,13 +9,13 @@ $colors: (
 );
 
 // Typo 
-$typo: (
-    cabin-reg: 'Cabin-regular',
-    cabin-sb: 'Cabin-semi-bold',
-    cabin-bold: 'Cabin-Bold',
-    fjalla: 'Fjalla-One',
-    roboto: 'Roboto'
-);
+// $typo: (
+//     cabin-reg: 'Cabin-regular',
+//     cabin-sb: 'Cabin-semi-bold',
+//     cabin-bold: 'Cabin-Bold',
+//     fjalla: 'Fjalla-One',
+//     roboto: 'Roboto'
+// );
 
 // Tailles typographiques 
 $body: (
@@ -28,6 +28,7 @@ $body: (
 
 $title: (
     small: 20px,
-    regular: 35px,
+    regular: 25px,
     large: 30px,
+    extra-large: 33px,
 );
