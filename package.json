@@ -1,4 +1,15 @@
 {
+  "name": "lugus-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC",
+  "description": "test Lugus, développeur web junior en alternance",
+
+  "scripts": {
+    "start": "npm run start"
+  },
   "dependencies": {
     "sass": "^1.63.2"
   }
