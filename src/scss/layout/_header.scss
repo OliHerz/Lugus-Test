@@ -3,10 +3,11 @@
     // background-color:antiquewhite;
     grid-column: 1/-1;
     height: 85px;
-    display: flex;
+    display: grid;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    grid-template-columns: repeat(12,1fr);
 
     // menu mobile
     .header-hamburger {
@@ -17,9 +18,7 @@
     .header-logo {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
+        justify-self: start;
         width: 59px;
         height: 61px;
 
@@ -50,10 +49,11 @@
         }
     }
 
-    // style du menu de navigation
+    // style du menu de navigation du header
     .header-nav {
         flex-grow: 1;
-        margin-left: 32px;
+        grid-column: 2/8;
+        margin-left: -10px;
 
         // style de la liste
         .nav-list {
@@ -63,10 +63,6 @@
             padding: 0;
             gap: 20px;
 
-            // suppression du style des items de liste
-            .nav-item { 
-                text-decoration: none;
-            
                 // style des liens contenus dans les items de liste
                 .nav-link {
                     @include cabin-regular;
@@ -75,16 +71,20 @@
                     font-size: map-get($body, medium );
                     color: #000;
                 }
-            }
         }
     }
 
     // style de la div qui contient les icons du header.
     .header-icons {
+        grid-column: -3/-1;
         display: flex;
         justify-content: flex-end;
         align-items: center;
         margin-right: 0;
         gap: 20px;
+
+        .header-button {
+            padding: 0;
+        }
     }
 }
