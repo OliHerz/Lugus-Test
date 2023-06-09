@@ -1,5 +1,90 @@
 // style relatif au header
-
 .header {
-    
+    // background-color:antiquewhite;
+    grid-column: 1/-1;
+    height: 85px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    // menu mobile
+    .header-hamburger {
+        display: none;
+    }
+
+    // style du logo
+    .header-logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 59px;
+        height: 61px;
+
+        // style du svg
+        .logo {
+            text-decoration: none;
+            margin: 0;
+        }
+
+        // style du slogan entier
+        .slogan {
+            color: map-get($colors, light-blue);
+            text-transform: uppercase;
+            font-size: map-get($body, extra-small );
+            font-family: map-get($typo, roboto );
+            font-weight: 800;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            // style spécifique du "BORDER""
+            span {
+                font-size: map-get($body, regular );
+                line-height: map-get($body, small );
+            }
+        }
+    }
+
+    // style du menu de navigation
+    .header-nav {
+        flex-grow: 1;
+        margin-left: 32px;
+
+        // style de la liste
+        .nav-list {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            gap: 20px;
+
+            // suppression du style des items de liste
+            .nav-item { 
+                text-decoration: none;
+            
+                // style des liens contenus dans les items de liste
+                .nav-link {
+                    @include cabin-regular;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: map-get($body, medium );
+                    color: #000;
+                }
+            }
+        }
+    }
+
+    // style de la div qui contient les icons du header.
+    .header-icons {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 0;
+        gap: 20px;
+    }
 }

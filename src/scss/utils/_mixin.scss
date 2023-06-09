@@ -1,0 +1,29 @@
+// Mixin pour la police Cabin en regular
+@mixin cabin-regular {
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+  }
+  
+// Mixin pour la police Cabin en semi-bold
+@mixin cabin-semi-bold {
+    font-family: 'Cabin', sans-serif;
+    font-weight: 600;
+}
+
+// Mixin pour la police Cabin en bold
+@mixin cabin-bold {
+    font-family: 'Cabin', sans-serif;
+    font-weight: 700;
+}
+
+// Mixin pour la police Fjalla One
+@mixin fjalla-one {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 400;
+}
+
+// Mixin pour la police Roboto en bold
+@mixin roboto-bold {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}

@@ -2,6 +2,7 @@
 $colors: (
     background: #F0DCD3,
     black: #373741,
+    light-blue: #4374EF,
     blue: #323949,
     grey: #6D6D6D,
     white: #FFFFFF,
@@ -9,11 +10,24 @@ $colors: (
 
 // Typo 
 $typo: (
-    cabin-reg: ('Cabin-regular', cabin-regular),
-    cabin-sb: ('Cabin-semi-bold', cabin-semi-bold),
-    cabin-bold: ('Cabin-Bold', cabin-bold),
-    fjalla: ('Fjalla-One', fjalla),
-    roboto: ('Roboto', roboto)
-)
+    cabin-reg: 'Cabin-regular',
+    cabin-sb: 'Cabin-semi-bold',
+    cabin-bold: 'Cabin-Bold',
+    fjalla: 'Fjalla-One',
+    roboto: 'Roboto'
+);
 
 // Tailles typographiques 
+$body: (
+    extra-small: 11px,
+    small: 13px,
+    medium: 14px,
+    regular: 15px,
+    large:16px,
+);
+
+$title: (
+    small: 20px,
+    regular: 35px,
+    large: 30px,
+);

@@ -1,9 +1,13 @@
 // Polices de caractère 
-@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&family=Fjalla+One&family=Roboto:wght@700&display=swap');
+@import "https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&family=Fjalla+One&family=Roboto:wght@700&display=swap";
 
 
 // Librairies
 @import "vendors/normalize";
+
+// Utilitaires
+@import "./utils/mixin";
+@import "./utils/variables";
 
 
 // Règles de base
@@ -11,3 +15,6 @@
 
 // Layout 
 @import "layout/header";
+
+// Composants 
+@import "components/header_button"
