@@ -33,7 +33,7 @@
             color: map-get($colors, light-blue);
             text-transform: uppercase;
             font-size: map-get($body, extra-small );
-            font-family: map-get($typo, roboto );
+            @include roboto-bold;
             font-weight: 800;
             margin: 0;
             display: flex;

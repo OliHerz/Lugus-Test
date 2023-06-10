@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../src/scss/style.css">
-        <title>Document</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../src/scss/style.css" />
+        <title>Lugus - Test</title>
     </head>
 
     <body>
-        <header class="header"> 
-
+        <header class="header">
             <button class="header-hamburger">
                 <span>aaaa</span>
                 <span></span>
@@ -18,81 +17,147 @@
             </button>
 
             <div class="header-logo">
-                <img src="./assets/img/svg/logo.svg" alt="" class="logo">
-                <p class="slogan">the snow <span>border</span></p> 
+                <img src="./assets/img/svg/logo.svg" alt="" class="logo" />
+                <p class="slogan">the snow <span>border</span></p>
             </div>
 
             <nav class="header-nav">
                 <ul class="nav-list">
-                    <li class="nav-item"> 
-                        <a href="" class="nav-link">snowboards</a> 
+                    <li class="nav-item">
+                        <a href="" class="nav-link">snowboards</a>
                     </li>
-                    <li class="nav-item"> 
-                        <a href="" class="nav-link">splitboards</a> 
+                    <li class="nav-item">
+                        <a href="" class="nav-link">splitboards</a>
                     </li>
-                    <li class="nav-item"> 
-                        <a href="" class="nav-link">boots</a> 
+                    <li class="nav-item">
+                        <a href="" class="nav-link">boots</a>
                     </li>
-                    <li class="nav-item"> 
-                        <a href="" class="nav-link">fixations</a> 
+                    <li class="nav-item">
+                        <a href="" class="nav-link">fixations</a>
                     </li>
-                    <li class="nav-item"> 
-                        <a href="" class="nav-link">housses</a> 
+                    <li class="nav-item">
+                        <a href="" class="nav-link">housses</a>
                     </li>
-                    <li class="nav-item"> 
-                        <a href="" class="nav-link">divers</a> 
+                    <li class="nav-item">
+                        <a href="" class="nav-link">divers</a>
                     </li>
                 </ul>
             </nav>
 
             <div class="header-icons">
                 <button class="header-button">
-                    <img src="./assets/img/svg/icon/search-icon.svg" alt="icon de recherche" class="icon">
+                    <img
+                        src="./assets/img/svg/icon/search-icon.svg"
+                        alt="icon de recherche"
+                        class="icon"
+                    />
                 </button>
                 <button class="header-button">
-                    <img src="./assets/img/svg/icon/account-icon.svg" alt="icon de l'utilisateur" class="icon">
-                </button>
+                    <img
+                        src="./assets/img/svg/icon/account-icon.svg"
+                        alt="icon de l'utilisateur"
+                        class="icon"
+                    />
+                    </button>
                 <button class="header-button">
-                    <img src="./assets/img/svg/icon/cart-icon.svg" alt="icon du panier utiliateur" class="icon">
+                    <img
+                        src="./assets/img/svg/icon/cart-icon.svg"
+                        alt="icon du panier utiliateur"
+                        class="icon"
+                    />
                 </button>
             </div>
         </header>
 
-
         <main>
+            <section class="product">
 
+                <div class="product-image-container">
+                    <img 
+                        src="" 
+                        alt=""
+                        style="width: auto; height: 490px" 
+                        class="product-image" 
+                    />
+                </div>
+
+                <div class="product-info">
+                    <h2 class="product-title product-detail">
+                        The Collection Snowboard : Hydrogen
+                    </h2>
+                    <p class="product-price product-detail"></p>
+
+                    <div class="variant-color product-detail" id="color-container">
+                        <p class="title-option">
+                            Couleur
+                        </p>
+                        <div class="option-container">
+                            <button class="option-color" data-color="Blue">bleu</button>
+                            <button class="option-color" data-color="Yellow">jaune</button>
+                        </div>
+                    </div>
+
+                    <div class="variant-size product-detail" id="size-container">
+                        <p class="title-option">Taille</p>
+                        <div class="option-container">
+                            <button class="option-size" data-size="M">m</button>
+                            <button class="option-size" data-size="L">l</button>
+                        </div>
+                    </div>
+
+                    <div class="option-quantity product-detail">
+                        <button>-</button>
+                        <p>1</p>
+                        <button>+</button>
+                    </div>
+
+                    <p class="product-description product-detail">
+                        Nunc porttitor consectetur consequat. Praesent ultricies sagittis
+                        tortor in consequat. Fusce aliquet velit ac magna mollis dignissim.
+                    </p>
+
+                    <div class="button-cart-product">
+                        <button class="add-cart-btn">ajouter au panier</button>
+                        <button class="buy-now-btn">acheter maintenant</button>
+                    </div>
+
+                </div>
+            </section>
         </main>
 
         <footer>
+        <div class="footer-logo">
+            <img 
+                src="./assets/img/svg/logo.svg" 
+                alt="" 
+                class="logo" 
+            />
+            <p class="slogan">the snow <span>border</span></p>
+        </div>
 
-            <div class="footer-logo">
-                <img src="./assets/img/svg/logo.svg" alt="" class="logo">
-                <p class="slogan">the snow <span>border</span></p> 
-            </div>
-
-            <nav class="footer-nav">
-                <ul class="nav-list">
-                    <li class="nav-item"> 
-                        <a href="" class="nav-link">Contact us</a> 
-                    </li>
-                    <li class="nav-item"> 
-                        <a href="" class="nav-link">About</a> 
-                    </li>
-                    <li class="nav-item"> 
-                        <a href="" class="nav-link">Stores</a> 
-                    </li>
-                    <li class="nav-item"> 
-                        <a href="" class="nav-link">Help center</a> 
-                    </li>
-                    <li class="nav-item"> 
-                        <a href="" class="nav-link">Legal notice</a> 
-                    </li>
-                </ul>
-            </nav>
+        <nav class="footer-nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="" class="nav-link">Contact us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Stores</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Help center</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Legal notice</a>
+                </li>
+            </ul>
+        </nav>
 
             <p>© 2023, Test technique Lugus Powered by Shopify</p>
-
-
         </footer>
+
+        <script src="./src/js/product/product.js" type="module"></script>
     </body>
 </html>
