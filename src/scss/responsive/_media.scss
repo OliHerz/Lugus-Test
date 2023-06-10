@@ -1,0 +1,134 @@
+@media screen and (max-width: 693px) {
+
+    .header {
+        height: 75px;
+        display: flex;
+        justify-content: space-between;
+
+        .header-hamburger {
+            display: inherit;
+            cursor: pointer;
+            background-color: transparent;
+        }
+
+        .header-logo {
+            flex-direction: row;
+            height: 24px;
+            width: 92px;
+
+            .logo {
+                height: 23px;
+                width: 33px;
+            }
+
+            .slogan {
+                @include roboto-black;
+            }
+        }
+        .header-nav {
+            display: none;
+        }
+
+        .header-icons {
+            gap: 21px;
+            button.header-button:nth-child(2){
+                display: none;
+            }
+        }
+    }
+
+    .product {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+
+        .product-info {
+            .product-detail {
+                margin-bottom: 25px;
+            }
+            .product-title {
+                font-size: map-get($title, small);
+                margin-bottom: 13px;
+            }
+            .product-price {
+                font-size: map-get($body, extra-large);
+                margin-bottom: 14px;
+            }
+
+            .button-cart-product {
+                margin: 35px 0px;
+            }   
+        }
+    }
+
+    .review {
+        display: flex;
+        flex-direction: column;
+
+        .review-header {
+            .review-title{
+                font-size: map-get($body, extra-large );
+            }
+            .review-average {
+                font-size: map-get($body, large );
+            }
+        }
+
+        .comments-container {
+            margin: 30px 0px;
+            .review-content {
+                padding: 15px;
+                .review-info {
+                    .review-info-comment {
+                        font-size: map-get($body, small);
+                    }
+                    .review-info-rate {
+                        font-size: map-get($body, medium);
+    
+                    }
+                }
+    
+                .review-author {
+                    font-size: map-get($body, small);
+                }
+            }
+        }
+    }
+
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 44px;
+        margin-bottom: 70px;
+        
+        .footer-logo {
+            height:  61px;
+            width: 59px;
+
+            .logo {
+                height: 35px;
+                width: 51px;
+            }
+
+            .slogan {
+                font-size: map-get($body, extra-small);
+                line-height: 10px;
+              
+                span {
+                  font-size: map-get($body, regular);
+                  line-height: 13px;
+                }
+              }
+              
+        }
+        p {
+            margin: 0;
+        }
+    }
+
+
+
+  }
