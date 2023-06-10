@@ -1,0 +1,109 @@
+.product {
+    display: flex;
+    flex-direction: row;
+    // background-color:antiquewhite;
+
+    .product-image-container {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+
+        .image-product{
+            width: auto;
+            height: 490px;
+        }
+    }
+
+    .product-info {
+        width: 50%;
+        
+        .product-detail {
+            margin-bottom: 25px;
+        }
+
+        .product-title {
+            @include fjalla-one;
+            text-transform: uppercase;
+            font-size: map-get($title, large);
+        }
+        .product-price {
+            @include fjalla-one;
+            font-size: map-get($title, regular);
+            color: map-get($colors, light-blue );
+        }
+        .title-option {
+            @include cabin-regular;
+            font-size: map-get($body, small);
+            color: map-get($colors, grey );
+            margin-bottom: 10px;
+        }
+
+        .option-container {
+            display: flex;
+            gap: 10px;
+            button {
+                @include cabin-regular;
+                color: map-get($colors, light-blue);
+                font-size: map-get($body, regular);
+                border: solid 1px map-get($colors, light-blue);
+                padding: 10px 25px;
+                border-radius: 37px;
+                text-transform: uppercase;
+            }
+        }
+
+        .option-quantity {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 129px;
+            background-color: map-get($colors, light-blue);
+            border-radius: 3px;
+            margin: 35px 0px 40px 0px;
+            padding: 7px;
+            height: 46px;
+
+            p, button {
+                @include fjalla-one;
+                font-size: map-get($title, small);
+                color: white;
+            }
+            button {
+                background-color: map-get($colors, light-blue);
+                border: none;
+            }
+        }
+
+        .product-desription {
+            @include cabin-regular;
+            font-size: map-get($body, large );
+            line-height: 160%;
+            color: map-get($colors, grey-brown  );
+        }
+
+        .button-cart-product {
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+          
+            button {
+              @include roboto-bold;
+              border: solid 1px map-get($colors, light-blue);
+              width: 343px;
+              height: 49px;
+              border-radius: 3px;
+              text-transform: uppercase;
+            }
+          
+            .add-cart-btn {
+              color: map-get($colors, light-blue);
+            }
+          
+            .buy-now-btn {
+              color: map-get($colors, white);
+              background-color: map-get($colors, light-blue);
+            }
+          }
+          
+    }
+}
