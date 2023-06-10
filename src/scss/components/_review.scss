@@ -1,0 +1,70 @@
+.review {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+
+    .review-header , .review-content {
+        margin: 15px 0px;
+    }
+
+    .review-header {
+        grid-row: 1;
+        grid-column: 4 / span 6;
+        text-align: center;
+        gap: 8px;
+        display: flex;
+        flex-direction: column;
+
+        .review-title {
+            @include fjalla-one;
+            text-transform: uppercase;
+            font-size: map-get($title, regular);
+            justify-self: center;
+        }
+
+        .review-average {
+            @include cabin-semi-bold;
+            font-size: map-get($body, extra-large);
+            color: map-get($colors, light-blue);
+        }
+    }
+    .comments-container {
+        grid-row: 2;
+        grid-column: 4 / span 6;
+
+        .review-content {
+            grid-row: 2;
+            grid-column: 4 / span 6;
+            display: flex;
+            flex-direction: column;
+            background-color: #F6F8FC;
+            padding:20px;
+            gap: 10px;
+    
+            .review-info {
+                display: flex;
+                justify-content: space-between;
+    
+                .review-info-comment {
+                    @include cabin-semi-bold;
+                    font-size: map-get($body, regular);
+                    color: #3C3C3C;
+                }
+    
+                .review-info-rate {
+                    @include cabin-bold;
+                    font-size: map-get($body, large);
+                    color: map-get($colors, light-blue );
+                }
+            }
+    
+            .review-author{
+                @include cabin-semi-bold;
+                font-size: map-get($body, regular );
+                color: #B5B5B5;
+            }
+        }
+    }
+    
+}
