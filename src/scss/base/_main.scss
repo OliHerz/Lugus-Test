@@ -7,17 +7,13 @@
 }
 
 body{
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
   width: 91%;
   margin: 0 auto; 
   gap: 10px;
 }
 
 main{
-  grid-column: 1/-1;
-  width: 90%;
-  margin: auto;
+  width: 100%;
 }
 
 button {

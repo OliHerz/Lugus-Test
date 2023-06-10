@@ -1,10 +1,15 @@
 .product {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 10px;
+    // grid-row: 1;
+    // grid-column: 1/-1;
+    // display: flex;
+    // flex-direction: row;
     // background-color:antiquewhite;
 
     .product-image-container {
-        width: 50%;
+        grid-column: 2 / span 5;
         display: flex;
         justify-content: center;
 
@@ -15,7 +20,7 @@
     }
 
     .product-info {
-        width: 50%;
+        grid-column: 7 / span 5;
         
         .product-detail {
             margin-bottom: 25px;

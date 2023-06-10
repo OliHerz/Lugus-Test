@@ -1,4 +1,4 @@
-// récupération les données du produit
+// récupère les données du produit
 export function getProductData() {
     return new Promise((resolve, reject) => {
         let xhr = new XMLHttpRequest();
