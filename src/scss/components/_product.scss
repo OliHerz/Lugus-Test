@@ -74,7 +74,7 @@
             }
         }
 
-        .product-desription {
+        .product-description {
             @include cabin-regular;
             font-size: map-get($body, large );
             line-height: 160%;
