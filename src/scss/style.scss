@@ -1,7 +1,6 @@
 // Polices de caractère 
 @import "https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&family=Fjalla+One&family=Roboto:wght@700&display=swap";
 
-
 // Librairies
 @import "vendors/normalize";
 
@@ -21,3 +20,6 @@
 @import "components/header_button";
 @import "components/product";
 @import "components/review";
+
+// Responsive styles
+@import "responsive/media";

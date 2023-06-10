@@ -2,11 +2,11 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
-    gap: 10px;
+    // gap: 10px;
 
-    .review-header , .review-content {
-        margin: 15px 0px;
-    }
+    // .review-header , .review-content {
+    //     margin: 15px 0px;
+    // }
 
     .review-header {
         grid-row: 1;
@@ -32,6 +32,7 @@
     .comments-container {
         grid-row: 2;
         grid-column: 4 / span 6;
+        margin: 30px 0px;
 
         .review-content {
             grid-row: 2;
@@ -40,6 +41,7 @@
             flex-direction: column;
             background-color: #F6F8FC;
             padding:20px;
+            margin: 15px 0px;
             gap: 10px;
     
             .review-info {

@@ -61,7 +61,7 @@
             display: flex;
             justify-content: space-evenly;
             align-items: center;
-            width: 129px;
+            max-width: 129px;
             background-color: map-get($colors, light-blue);
             border-radius: 3px;
             margin: 35px 0px 40px 0px;
