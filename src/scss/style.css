@@ -464,6 +464,7 @@ footer p {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 10px;
+  margin: 70px 0px;
 }
 .product .product-image-container {
   grid-column: 2/span 5;
@@ -567,6 +568,7 @@ footer p {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
+  margin: 200px 0px;
 }
 .review .review-header {
   grid-row: 1;
