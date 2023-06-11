@@ -2,13 +2,14 @@
   "name": "lugus-test",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
   "author": "",
   "license": "ISC",
   "description": "test Lugus, développeur web junior en alternance",
-
   "scripts": {
-    "start": "npm run start"
+    "start": "lite-server"
   },
   "dependencies": {
     "sass": "^1.63.2"
