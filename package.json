@@ -9,7 +9,8 @@
   "license": "ISC",
   "description": "test Lugus, développeur web junior en alternance",
   "scripts": {
-    "start": "lite-server"
+    "start": "lite-server",
+    "sass": "sass --watch ./src/scss:./src/scss"
   },
   "dependencies": {
     "sass": "^1.63.2"
