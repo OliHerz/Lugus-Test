@@ -3,7 +3,10 @@
 
 import { getProductData } from './getProductData.js';
 import { updateProduct } from './updateProduct.js';
+import { counter } from './counter.js'
 
 getProductData().then((product) => {
     updateProduct(product);
 });
+
+counter();
